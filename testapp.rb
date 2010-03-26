@@ -5,12 +5,6 @@
 # bootstrap bundler
 require 'bootstrap.rb'
 
-class TestApp < Sinatra::Base
-  set :sessions, true
-  set :public, File.dirname(__FILE__) + '/public'
-  
-  get '/' do
-    haml :index
-  end
-end
+# load my app lib
+require 'lib/testapp.rb'
 
