@@ -6,8 +6,8 @@
     %link{:type => 'text/css', :rel => 'stylesheet', :media => 'screen', :href => '/css/style.css'}
   %body
     #header
-      %h1.title @title
-      %h2.subtitle @subtitle
+      %h1.title= @title
+      %h2.subtitle= @subtitle
     #content
       =yield
 
