@@ -17,7 +17,7 @@ class TestApp < Sinatra::Base
   set :sessions, true
   
   get '/' do
-    'Hello world!'
+    haml :index
   end
 end
 
