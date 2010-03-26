@@ -1,4 +1,4 @@
 # A sample Gemfile
 source :gemcutter
-#
-# gem "rails"
+gem "sinatra", "1.0"
+
