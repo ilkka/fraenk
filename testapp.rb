@@ -6,5 +6,5 @@
 require 'bootstrap.rb'
 
 # load my app lib
-require 'lib/testapp.rb'
+require 'lib/app.rb'
 
