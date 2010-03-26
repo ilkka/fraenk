@@ -1,4 +1,6 @@
-require '../testapp'
+require File.dirname(__FILE__) + '/../../testapp.rb'
+require 'rack/test'
+require 'shoulda'
 
 class TestAppTest < Test::Unit::TestCase
   include Rack::Test::Methods
