@@ -1,4 +1,4 @@
 # vim:syntax=ruby
-require 'testapp'
-run TestApp
+require 'fraenk'
+run FraenkApp
 

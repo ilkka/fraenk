@@ -1,11 +1,11 @@
-require File.dirname(__FILE__) + '/../../testapp.rb'
+require File.dirname(__FILE__) + '/../../fraenk.rb'
 require File.dirname(__FILE__) + '/../helper.rb'
 
-class TestAppTest < Test::Unit::TestCase
+class TestFraenkApp < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app
-    TestApp
+    FraenkApp
   end
 
   context "This application" do

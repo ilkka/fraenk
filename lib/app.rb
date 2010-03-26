@@ -1,5 +1,5 @@
 # vim:filetype=ruby
-class TestApp < Sinatra::Base
+class FraenkApp < Sinatra::Base
   set :sessions, true
   set :public, File.dirname(__FILE__) + '/../public'
  
