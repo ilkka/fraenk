@@ -12,7 +12,7 @@ class TestAppTest < Test::Unit::TestCase
   context "This application" do
     should "Return a valid index page" do
       get '/'
-      assert_equal "Hello world!", last_response.body
+      assert last_response.ok?
     end
   end
 end
