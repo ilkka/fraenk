@@ -6,7 +6,7 @@ class TestAppTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
   def app
-    Sinatra::Application
+    TestApp
   end
 
   context "This application" do
