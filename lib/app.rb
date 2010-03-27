@@ -54,5 +54,16 @@ class FraenkApp < Sinatra::Base
   get '/' do
     haml :index
   end
+
+  get '/restricted' do
+    restrict
+    haml "You're logged in so you got here"
+  end
+
+  get '/show' do
+    restrict
+    @user = current_user
+    haml :show
+  end
 end
 
