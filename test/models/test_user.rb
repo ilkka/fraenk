@@ -14,6 +14,11 @@ class TestUserController < Test::Unit::TestCase
     should "have a username" do
       assert_equal 'simakuutio123', @user.username
     end
+
+    should "have a changeable username" do
+      @user.username = 'dingleberry'
+      assert_equal 'dingleberry', @user.username
+    end
   end
 end
 
