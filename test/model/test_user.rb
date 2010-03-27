@@ -6,7 +6,14 @@ class TestUserController < Test::Unit::TestCase
   include Rack::Test::Methods
 
   context "A User instance" do
-    @user = User.new
+    setup do
+      @user = User.new
+      @user.username = 'simakuutio123'
+    end
+
+    should "have a username" do
+      assert_equal 'simakuutio123', @user.username
+    end
   end
 end
 
