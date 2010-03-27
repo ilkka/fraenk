@@ -36,6 +36,9 @@ def migrate(config)
   when 'sqlite3'
     DataMapper.setup(:default, "sqlite3:#{config['database']}")
   end
+
+  Dir.glob('lib/models/*.rb').each { |model| require model }
+
   DataMapper.auto_migrate!
 end
 
