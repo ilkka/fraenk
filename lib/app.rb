@@ -6,6 +6,9 @@ class Sinatra::Request
   alias remote_ip ip
 end
 
+# A Notice struct
+Notice = Struct.new(:msg).new
+
 class FraenkApp < Sinatra::Base
   set :sessions, true
   set :public, File.dirname(__FILE__) + '/../public'
