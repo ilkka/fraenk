@@ -12,7 +12,9 @@ class TestLoginHandler < Test::Unit::TestCase
     should "let user login" do
     end
 
-    should "let user logout" do
+    context "when user is logged in" do
+      should "let user logout" do
+      end
     end
 
     should "let user register for an account" do
