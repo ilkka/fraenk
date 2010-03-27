@@ -3,6 +3,8 @@
 source :gemcutter
 gem "sinatra", "1.0"
 gem "haml", "2.2.22"
+gem "dm-core", "0.10.2"
+gem "do_sqlite3", "0.10.1.1"
 
 group :test do
   gem 'test-unit'
