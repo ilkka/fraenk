@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/../../bootstrap.rb'
 require File.dirname(__FILE__) + '/../../lib/models/user.rb'
 require File.dirname(__FILE__) + '/../helper.rb'
 
-class TestUserController < Test::Unit::TestCase
+class TestUser < Test::Unit::TestCase
   include Rack::Test::Methods
 
   context "A User instance" do
