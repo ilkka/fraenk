@@ -1,5 +1,7 @@
 # User model
 class User
+  include DataMapper::Resource
+
   def username=(username)
     @username = username
   end
