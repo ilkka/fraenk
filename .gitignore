@@ -1,3 +1,5 @@
 .bundle
 coverage
 *.swp
+.autotest
+db/*.sqlite3
