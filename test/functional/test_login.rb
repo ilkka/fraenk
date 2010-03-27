@@ -10,6 +10,11 @@ class TestLoginHandler < Test::Unit::TestCase
 
   context "The login handler" do
     should "let user login" do
+      # load login form
+      get '/login'
+      assert last_response.ok?
+      post '/login'
+      assert last_response.ok?
     end
 
     context "when user is logged in" do
