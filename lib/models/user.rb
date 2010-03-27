@@ -2,20 +2,8 @@
 class User
   include DataMapper::Resource
 
-  def username=(username)
-    @username = username
-  end
-
-  def username
-    @username
-  end
-
-  def password=(password)
-    @password = password
-  end
-
-  def password
-    @password
-  end
+  property :id, Serial
+  property :username, String
+  property :password, String
 end
 
