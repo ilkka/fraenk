@@ -1,4 +1,7 @@
 Sinatra Test
 ============
 
-Foray into the world of Sinatra
+Foray into the world of Sinatra.
+
+Much of the Authlogic-related code is aped from
+http://github.com/ehsanul/Sinatra-Authlogic-Template.
