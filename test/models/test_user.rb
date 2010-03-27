@@ -13,17 +13,17 @@ class TestUser < Test::Unit::TestCase
 
     setup do
       @user = User.new
-      @user.username = TestUsername1
-      @user.password = TestPassword1
     end
 
     should "have a changeable username" do
+      @user.username = TestUsername1
       assert_equal TestUsername1, @user.username
       @user.username = TestUsername2
       assert_equal TestUsername2, @user.username
     end
 
     should "have a changeable password" do
+      @user.password = TestPassword1
       assert_equal TestPassword1, @user.password
       @user.password = TestPassword2
       assert_equal TestPassword2, @user.password
