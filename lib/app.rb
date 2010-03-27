@@ -20,9 +20,6 @@ class FraenkApp < Sinatra::Base
     when 'sqlite3'
       DataMapper.setup(:default, "sqlite3:#{@dbconfig['database']}")
     end
-  end
-
-  before do
     @title = "Sinatra + Haml + Bundler test"
     @subtitle ="Just a bit of something I got up to one day"
   end
