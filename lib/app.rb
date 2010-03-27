@@ -51,6 +51,8 @@ class FraenkApp < Sinatra::Base
     end
   end
 
+  %w{login user}.each {|handler| load "handlers/#{handler}.rb"}
+
   get '/' do
     haml :index
   end
