@@ -1,4 +1,11 @@
 # vim:filetype=ruby
+
+# authlogic bug workaround
+# see http://github.com/binarylogic/authlogic/issuesearch?state=open&q=remote_ip#issue/80
+class Sinatra::Request
+  alias remote_ip ip
+end
+
 class FraenkApp < Sinatra::Base
   set :sessions, true
   set :public, File.dirname(__FILE__) + '/../public'
