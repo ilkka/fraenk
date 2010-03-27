@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/../../bootstrap.rb'
+require File.dirname(__FILE__) + '/../../fraenk.rb'
 require File.dirname(__FILE__) + '/../../lib/models/user.rb'
 require File.dirname(__FILE__) + '/../helper.rb'
 
