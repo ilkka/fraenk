@@ -20,6 +20,9 @@ class FraenkApp < Sinatra::Base
     when 'sqlite3'
       DataMapper.setup(:default, "sqlite3:#{@dbconfig['database']}")
     end
+  end
+
+  before do
     @title = "Sinatra + Haml + Bundler test"
     @subtitle ="Just a bit of something I got up to one day"
   end
@@ -51,7 +54,7 @@ class FraenkApp < Sinatra::Base
     end
   end
 
-  %w{login user}.each {|handler| load "handlers/#{handler}.rb"}
+  %w{login user}.each {|handler| load File.dirname(__FILE__) + "/handlers/#{handler}.rb"}
 
   get '/' do
     haml :index
