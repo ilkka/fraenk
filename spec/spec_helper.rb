@@ -9,3 +9,8 @@ set :run, false
 set :raise_errors, true
 set :logging, false
 
+# mix in the rack test stuff
+Spec::Runner.configure do |conf|
+  conf.include Rack::Test::Methods
+end
+
