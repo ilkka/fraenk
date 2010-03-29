@@ -7,8 +7,7 @@ gem "dm-core", "0.10.2"
 gem "do_sqlite3", "0.10.1.1"
 
 group :test do
-  gem 'test-unit'
-  gem 'test-unit-mock'
+  gem "rspec"
   gem "rack-test"
   gem "shoulda"
 end
