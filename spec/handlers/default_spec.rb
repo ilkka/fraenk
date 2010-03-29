@@ -5,7 +5,7 @@ describe 'The default handler' do
     @app ||= FraenkApp
   end
 
-  should "return a valid index page" do
+  it "should return a valid index page" do
     get '/'
     last_response.should be_ok
   end
