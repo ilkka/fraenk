@@ -1,7 +1,8 @@
-require File.join(File.dirname(__FILE__) , '..', 'fraenk.rb')
+require File.join(File.dirname(__FILE__), '..', 'fraenk.rb')
 
 require 'spec/autorun'
 require 'spec/interop/test'
+require 'rack/test'
 
 # configure test environment
 set :environment, :test
