@@ -1,8 +1,10 @@
 # User model
-class UserSession < AuthLogic::Session::Base
+class UserSession < Authlogic::Session::Base
 end
 
 class User
+  include DataMapper::Resource
+  
   class << self 
   
     def < klass
