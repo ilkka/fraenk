@@ -54,11 +54,11 @@ class FraenkApp < Sinatra::Base
     end
   end
 
-  %w{login user}.each {|handler| load File.dirname(__FILE__) + "/handlers/#{handler}.rb"}
-
   get '/' do
     haml :index
   end
+
+  %w{login user}.each {|handler| load File.dirname(__FILE__) + "/handlers/#{handler}.rb"}
 
   get '/restricted' do
     restrict
